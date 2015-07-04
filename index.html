@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <meta name="appl-mobile-web-app-capable" content="yes">
+        <meta name="appl-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+        
+        
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+        <script src="./js/flashCards.js"></script>
+
+        <title>Flash Cards</title>
+    
+    </head>
+    <body>
+            <script>
+            window.onload = function() {
+                fileInput = document.getElementById('fileInput');
+                    
+                fileInput.addEventListener('change', function(e) {
+                    var file = fileInput.files[0];
+                    readWordListFile(file);
+                });        
+            }
+        </script>
+        
+        
+        <div data-role="page" id="mainpage">
+            <div id="header" data-role="header" data-theme="b">
+                <h1>Flash Cards</h1>
+                <a href="#settings" data-role="button" data-icon="gear" data-inline="true">Settings</a>
+            </div>
+            
+            <span id="cardFront" data-role="content">
+            </span>
+            
+            <div id="cardBack" data-role="content">
+                <textarea rows="6" cols="25">
+                </textarea>
+            </div>
+            
+            <button> Check Answer</button>
+            
+            
+            
+        </div>
+        
+        <div data-role="page" id="settings">
+            <div id="header" data-role="header" data-theme="b">
+                <h1>Settings</h1>
+                <a href="#mainpage" data-role="button" data-icon="home" data-inline="true">Home</a>
+            </div>
+            <input type="file" id="fileInput">
+            
+            <br>
+            Choose the language for the front of the card:
+            <select data-inline="true" id="cardFrontSelection">
+                <option value='UK English Male'>UK English Male</option>
+                <option value='US English Female'>US English Female</option>
+            </select>
+            
+            <br>
+            
+            Choose the language for the back of the card
+            <select data-inline="true" id="cardBackSelection">
+                    <option value='UK English Male'>UK English Male</option>
+                    <option value='US English Female'>US English Female</option>
+                </optgroup>
+            </select>
+        </div>
+        
+
+    
+    </body>
+</html>
