@@ -1,19 +1,22 @@
-var FcDeck;
+var fcDeck;
 
 function readWordListFile(file){
+    
     var textType = /text.*/;
     if (file.type.match(textType)) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-            FcDeckList = reader.result.split("\n");
-            
-            var FcDeck = JSON.parse(FcDeckList[0]);
-            console.log(Object.keys(FcDeck));
+            fcDeck = reader.result.split("\n");
+            updateOptions();
         }
+        reader.readAsText(file);
 
-        reader.readAsText(file);	
     } else {
         console.log("File not supported!");
-    }    
+    }
+}
+
+function updateOptions(){
+    console.log(fcDeck);
 }
