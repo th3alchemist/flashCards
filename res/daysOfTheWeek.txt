@@ -1,0 +1,7 @@
+﻿{"English":"sunday","Japanese":"にちようび","Spanish":"domingo"}
+{"English":"monday","Japanese":"げつようび","Spanish":"lunes"}
+{"English":"tuesday","Japanese":"かようび","Spanish":"martes"}
+{"English":"wednesday","Japanese":"すいようび","Spanish":"miércoles"}
+{"English":"thursday","Japanese":"もくようび","Spanish":"jueves"}
+{"English":"friday","Japanese":"きんようび","Spanish":"viernes"}
+{"English":"saturday","Japanese":"どようび","Spanish":"sabado"}

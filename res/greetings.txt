@@ -1,0 +1,18 @@
+﻿{"Kana":"おはよう","Romanji":"ohayoo","English":"Good morning","Spanish":"buenos días"}
+{"Kana":"おはようござります","Romanji":"ohayoo gozaimasu","English":"Good morning (polite)","Spanish":"buenos días"}
+{"Kana":"こんにちは","Romanji":"konnichiwa","English":"Good afternoon;hello","Spanish":"Buenas tardes;hola"}
+{"Kana":"こんばんは","Romanji":"konbanwa","English":"good evening","Spanish":"buenas noches"}
+{"Kana":"さようなら","Romanji":"sayoonara","English":"good-bye","Spanish":"Adiós"}
+{"Kana":"おやすみ（なさい）","Romanji":"oyasumi(nasai)","English":"good night","Spanish":"buenas noches"}
+{"Kana":"ありがとう","Romanji":"arigatoo","English":"thank you","Spanish":"gracias"}
+{"Kana":"ありがとうござります","Romanji":"arigatoo gozaimasu","English":"thank you very much","Spanish":"gracias"}
+{"Kana":"すみません","Romanji":"sumimasen","English":"Excuse me; I'm sorry","Spanish":"perdón"}
+{"Kana":"いいえ","Romanji":"iie","English":"no","Spanish":"no"}
+{"Kana":"いってきます","Romanji":"ittekimasu","English":"I'll go and come back","Spanish":""}
+{"Kana":"いってらっしゃい","Romanji":"itterasshai","English":"please go and come back","Spanish":""}
+{"Kana":"ただいま","Romanji":"tadaima","English":"I'm home","Spanish":""}
+{"Kana":"おかえり（なさい）","Romanji":"okaeri(nasai)","English":"welcome home","Spanish":""}
+{"Kana":"いただけます","Romanji":"itadakimasu","English":"thank you for the meal (before eating)","Spanish":""}
+{"Kana":"ごちそうさま（でした）","Romanji":"gochisoosama(deshita)","English":"thank you for the meal(after eating)","Spanish":""}
+{"Kana":"はじめまして","Romanji":"hajimemashita","English":"how do you do","Spanish":"Encantado"}
+{"Kana":"よろしくおねがいします","Romanji":"yoroshiku onegaishimasu","English":"nice to meet you","Spanish":"Mucho gusto"}
