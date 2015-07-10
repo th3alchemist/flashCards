@@ -47,13 +47,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.quiz', {
+      url: '/quiz',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-quiz': {
+          templateUrl: 'templates/tab-quiz.html',
+          controller: 'QuizCtrl'
         }
       }
     })
@@ -82,7 +81,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-settings': {
         templateUrl: 'templates/tab-settings.html',
-        controller: 'SettingsCtrl'
+        controller: 'settingsCtrl'
       }
     }
   });
