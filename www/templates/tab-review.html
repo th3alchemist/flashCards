@@ -1,5 +1,29 @@
+<style>
+.flashCard {
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    font-size:50px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+a.button{
+	font-size: 90px;
+}
+
+</style>
 <ion-view view-title="Review">
   <ion-content>
-    <h1>Review page</h1>
+	<center>
+		<table border="1">
+		  <tr>
+		    <td><a class="button icon-left ion-arrow-left-b button-clear"></a></td>
+		    <td class="flashCard">hi{{cardFront}}</td> 
+		    <td><a class="button icon-right ion-arrow-right-b button-clear"></a></td>
+		  </tr>
+		</table>
+	</center>
   </ion-content>
 </ion-view>
