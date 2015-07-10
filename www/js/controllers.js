@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('ReviewCtrl', function($scope, $http) {
-	$http.get("res/greetings.json")
+	$http.get("res/daysOfTheWeek.json")
 		.success(function(data){
 			$scope.cardList = data;
 		});

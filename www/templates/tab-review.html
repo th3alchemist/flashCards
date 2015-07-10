@@ -19,13 +19,25 @@ a.button{
 	<center>
 		<table border="1">
 		  <tr>
-		    <td><a class="button icon-left ion-arrow-left-b button-clear"></a></td>
-		    <td class="flashCard">hi{{cardFront}}</td> 
-		    <td><a class="button icon-right ion-arrow-right-b button-clear"></a></td>
+		    <td><a class="button icon-left ion-arrow-left-b button-clear" href="#/tab/quiz"></a></td>
+		    <td class="flashCard">{{cardList[0].Kana}}</td> 
+		    <td><a class="button icon-right ion-arrow-right-b button-clear" href="#/tab/study"></a></td>
 		  </tr>
 		</table>
+		<span style="display: inline;">
+			Front:<select id="cardFrontSelection">
+				<option value="English">English</option>
+				<option value="Kana">Kana</option>
+				<option value="Spanish">Spanish</option>
+			</select>
+			Back:
+			<select id="cardBackSelection">
+				<option value="English">English</option>
+				<option value="Kana">Kana</option>
+				<option value="Spanish">Spanish</option>
+			</select>
+		</span>
+</center>
 
-		{{cardList}}
-	</center>
   </ion-content>
 </ion-view>

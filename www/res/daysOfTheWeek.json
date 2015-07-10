@@ -1,9 +1,9 @@
 ﻿[
-{"English":"sunday","Japanese":"にちようび","Spanish":"domingo"},
-{"English":"monday","Japanese":"げつようび","Spanish":"lunes"},
-{"English":"tuesday","Japanese":"かようび","Spanish":"martes"},
-{"English":"wednesday","Japanese":"すいようび","Spanish":"miércoles"},
-{"English":"thursday","Japanese":"もくようび","Spanish":"jueves"},
-{"English":"friday","Japanese":"きんようび","Spanish":"viernes"},
-{"English":"saturday","Japanese":"どようび","Spanish":"sabado"}
+{"English":"sunday","Kana":"にちようび","Spanish":"domingo"},
+{"English":"monday","Kana":"げつようび","Spanish":"lunes"},
+{"English":"tuesday","Kana":"かようび","Spanish":"martes"},
+{"English":"wednesday","Kana":"すいようび","Spanish":"miércoles"},
+{"English":"thursday","Kana":"もくようび","Spanish":"jueves"},
+{"English":"friday","Kana":"きんようび","Spanish":"viernes"},
+{"English":"saturday","Kana":"どようび","Spanish":"sabado"}
 ]
