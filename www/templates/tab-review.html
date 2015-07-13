@@ -14,5 +14,21 @@
 			Back:<select ng-model="back" id="cardBackSelection"></select>
 		</span>
 	</center>
+
+       <flippy
+            ng-click="flip()"
+            flip-duration="800"
+            timing-function="ease-in-out">
+
+            <flippy-front>
+                <img src="http://placehold.it/300&text=Im the front" alt="the front" />
+            </flippy-front>
+
+            <flippy-back>
+                <img src="http://placehold.it/300&text=Aaaaaand the back" alt="the back" />
+            </flippy-back>
+
+        </flippy>
+
   </ion-content>
 </ion-view>
