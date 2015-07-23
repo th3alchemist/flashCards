@@ -1,0 +1,22 @@
+<ion-view view-title="Review">
+  <ion-content>
+	<center>
+		<table>
+		  <tr>
+		    <td><a class="button icon-left ion-arrow-left-b button-clear" href="#/tab/review/{{prevCard}}"></a></td>
+		    <td>
+		    	<flippy ng-click="flip()" flip-duration="800" timing-function="ease-in-out">
+		            <flippy-front><textarea>{{cardList[index][front]}}</textarea></flippy-front>
+		            <flippy-back><textarea>{{cardList[index][back]}}</textarea></flippy-back>
+        		</flippy>
+    		</td>
+		    <td><a class="button icon-right ion-arrow-right-b button-clear" href="#/tab/review/{{nextCard}}"></a></td>
+		  </tr>
+		</table>
+		<span style="display: inline;">
+			Front:<select ng-model="front" id="cardFrontSelection"></select>
+			Back:<select ng-model="back" id="cardBackSelection"></select>
+		</span>
+	</center>
+  </ion-content>
+</ion-view>

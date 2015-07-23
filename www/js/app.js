@@ -38,6 +38,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     };
   })
 
+  .directive('navigate', function(){
+    return{
+      link: function($scope) {
+        $scope.incCard = function() {
+          $scope.index = ($scope.index+1) % $scope.deckSize;
+        }
+
+        $scope.decCard = function() {
+          $scope.index = ($scope.index-1) % $scope.deckSize;
+          if ($scope.index <0){
+              $scope.index = $scope.deckSize -1;
+          }
+        }        
+      }
+    };
+  })
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

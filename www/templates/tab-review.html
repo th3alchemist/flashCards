@@ -1,34 +1,20 @@
 <ion-view view-title="Review">
   <ion-content>
-	<center>
-		<table border="1">
-		  <tr>
-		    <td><a class="button icon-left ion-arrow-left-b button-clear" href="#/tab/review/{{prevCard}}"></a></td>
-		    <td class="flashCard">{{cardList[index][front]}}</td>
-		    <td class="flashCard">{{cardList[index][back]}}</td>
-		    <td><a class="button icon-right ion-arrow-right-b button-clear" href="#/tab/review/{{nextCard}}"></a></td>
-		  </tr>
-		</table>
-		<span style="display: inline;">
-			Front:<select ng-model="front" id="cardFrontSelection"></select>
-			Back:<select ng-model="back" id="cardBackSelection"></select>
-		</span>
-	</center>
+		<center>
+			<span style="display: inline;">
+		    <navigate class="button icon-left ion-arrow-left-b button-clear" ng-click="decCard()" ></navigate>
+		  	<flippy ng-click="flip()" flip-duration="800" timing-function="ease-in-out">
+		          <flippy-front>{{cardList[index][front]}}</flippy-front>
+		          <flippy-back>{{cardList[index][back]}}</flippy-back>
+		  	</flippy>
+		    <navigate class="button icon-right ion-arrow-right-b button-clear" ng-click="incCard()" ></navigate>
+			</span>
 
-       <flippy
-            ng-click="flip()"
-            flip-duration="800"
-            timing-function="ease-in-out">
-
-            <flippy-front>
-                <img src="http://placehold.it/300&text=Im the front" alt="the front" />
-            </flippy-front>
-
-            <flippy-back>
-                <img src="http://placehold.it/300&text=Aaaaaand the back" alt="the back" />
-            </flippy-back>
-
-        </flippy>
-
+			<br>
+			<span style="display: inline;">
+				Front:<select ng-model="front" id="cardFrontSelection"></select>
+				Back:<select ng-model="back" id="cardBackSelection"></select>
+			</span>
+		</center>
   </ion-content>
 </ion-view>

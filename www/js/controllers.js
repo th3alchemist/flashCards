@@ -10,15 +10,18 @@ angular.module('starter.controllers', [])
 			updateOptionMenu(data[0]);
 
 			$scope.cardList = data;
-			$scope.index = $stateParams.cardId;
+			$scope.sampleCard = data[0];
+			$scope.index = 0;//$stateParams.cardId;
+			$scope.deckSize = data.length;
 			$scope.nextCard = (parseInt($stateParams.cardId)+1) % data.length;
 			$scope.prevCard = (parseInt($stateParams.cardId)-1) % data.length;
 			if ($scope.prevCard <0){
 				$scope.prevCard = data.length-1;
 			}
+			$scope.currentCard = $scope.cardList[$scope.index];
 			$scope.front = frontEle.options[frontEle.selectedIndex].text;
 			$scope.back = backEle.options[backEle.selectedIndex].text;
-		});	
+		});
 })
 .controller('QuizCtrl', function($scope) {})
 
