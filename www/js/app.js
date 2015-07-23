@@ -87,7 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each tab has its own nav history stack:
 
   .state('tab.review', {
-    url: '/review/{cardId:int}',
+    url: '/review',
     views: {
       'tab-review': {
         templateUrl: 'templates/tab-review.html',
@@ -116,6 +116,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/review/0');
+  $urlRouterProvider.otherwise('/tab/review');
 
 });
